@@ -845,7 +845,11 @@ hr {
     }
 /*************************************************************/
 @media only screen and (max-width:768px) {
-
+    description {
+        position: fixed;
+        color: white;
+        z-index: -1;
+    }
     .div-form {
         float: right;
         width: 347px;
@@ -859,8 +863,9 @@ hr {
     }
         .div-specialities > img {
             margin: 0;
-            width: 303px;
             height: auto;
+            margin-top: 14px;
+            margin-left: 6px;
         }
 
     .md-stepper-horizontal {
@@ -904,19 +909,13 @@ hr {
     }
 
     .div-keyhighlights {
+        display: flex;
         position: inherit;
         margin-left: 0px;
-        /*margin-top: 102px;*/
         max-width: 100%;
-        /* background-color: white; */
-        /* display: grid; */
-        margin-right: 15px;
-        padding-left: 26px;
+        margin-top: 10px;
     }
 
-    .img-keyhighlights {
-        margin-left: 62px;
-    }
 
     .services {
         margin-top: 375px;
