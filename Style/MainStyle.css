@@ -852,8 +852,8 @@ hr {
     }
     .div-form {
         float: right;
-        width: 347px;
-        height: 368px;
+        width: 421px;
+        height: 448px;
         border-style: none;
         padding: 10px;
         margin: -8px -12px;
@@ -910,6 +910,7 @@ hr {
 
     .div-keyhighlights {
         display: flex;
+        margin-bottom: 30px;
         position: inherit;
         margin-left: 0px;
         max-width: 100%;
