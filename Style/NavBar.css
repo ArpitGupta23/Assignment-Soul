@@ -322,7 +322,7 @@ nav {
                 color: black;
             }
 
-    .active {
+    .logo-active {
         background-color: var(--theme-color-primary);
         color: white;
     }
