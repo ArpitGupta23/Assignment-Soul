@@ -290,6 +290,7 @@ nav {
     }
 
     .topnav {
+        display:block;
         overflow: hidden;
         background-color: var(--theme-color-primary);
         position: relative;
