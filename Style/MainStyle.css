@@ -5,7 +5,12 @@
 body{
     font-family:Arial;
 }
-
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 
 .div-form {
@@ -715,10 +720,15 @@ hr {
 }
 .hlIaQc {
     font-weight: 600;
-    color: rgb(23, 30, 48);
+    /*color: rgb(23, 30, 48);*/
     line-height: normal;
     letter-spacing: normal;
 }
+
+.blue > p{
+    color:rgb(255,255,255);
+}
+
 .gBoSfG.blue {
     background-image: linear-gradient(32deg, rgb(60, 73, 107) 0%, var(--theme-color-primary) 100%);
 }
@@ -834,30 +844,73 @@ hr {
     }
 /*************************************************************/
 @media only screen and (max-width:768px) {
-    body{
-        width:auto;
-    }
+
     .div-form {
         float: right;
-        width: 445px;
-        height: 415px;
+        width: 347px;
+        height: 368px;
         border-style: none;
         padding: 10px;
         margin: -8px -12px;
     }
     .div-specialities {
-        display: block;
+        display: inline-grid;
     }
-    .div-specialities > img {
-        margin: 100px 30px;
-        width: 1277px;
-        height: 864px;
+        .div-specialities > img {
+            margin: 0;
+            width: 303px;
+            height: auto;
+        }
+
+    .md-stepper-horizontal {
+        display: grid;
+        max-width: 1000px;
+        padding: 0 10px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+        .md-stepper-horizontal .md-step .md-step-bar-right {
+             right: auto; 
+            left: 50%;
+            margin-left: 20px;
+        }
+
+        .md-stepper-horizontal .md-step .md-step-bar-left {
+             left: auto; 
+            right: 50%;
+            margin-right: 20px;
+        }
+    .md-step-title {
+        text-align: center;
+        width: auto;
+        font-weight: bold;
+    }
+
+    .hMKJXo{
+        display:none;
+    }
+
+    .comp_profile{
+        display:none;
+    }
+    .info-heading{height:auto;}
+
+    .faq-heading{
+        height:auto;
+    }
+    #ordernow {
+        display: none;
     }
 
     .div-keyhighlights {
         position: inherit;
         margin-left: 0px;
-        margin-top: 102px;
+        /*margin-top: 102px;*/
+        max-width: 100%;
+        /* background-color: white; */
+        /* display: grid; */
+        margin-right: 15px;
+        padding-left: 26px;
     }
 
     .img-keyhighlights {
@@ -926,5 +979,11 @@ hr {
     }
     .div-info {
         margin-top: 260px;
+    }
+    .stepper {
+        margin-top: 115px;
+    }
+    .socialLink >span{
+        display:none;
     }
 }

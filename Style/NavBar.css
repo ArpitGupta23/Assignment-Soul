@@ -10,6 +10,7 @@
 }
 
 body {
+ 
 }
 
 .fa.fa-instagram {
@@ -222,10 +223,18 @@ nav {
     }
 
 @media only screen and (max-width:768px) {
+
+    .logo {
+        width: 144px;
+        height: 50px;
+    }
     .socialLink {
-     margin-right: 0px;
+        display:none;
+        width:10px;
+        margin-right: 0px;
         text-align: right;
-        padding-left: 315px;
+        /* padding-left: 315px; */
+        /*display: grid;*/
         position: relative;
         margin-top: 0px;
     }
@@ -250,5 +259,14 @@ nav {
     .nav-item {
         border: 1px solid var(--theme-color-primary);
         text-align: center;
+    }
+
+.btn.btn-rounded{
+    background-color:var(--theme-color-secondary);
+}
+
+
+    #ordernow{
+        display:none;
     }
 }
