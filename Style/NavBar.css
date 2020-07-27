@@ -12,6 +12,9 @@
 body {
  
 }
+.topnav{
+    display:none;
+}
 
 .fa.fa-instagram {
     color: transparent;
