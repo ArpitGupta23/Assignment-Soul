@@ -482,6 +482,10 @@ hr {
     font-size: 1.7rem;
 }
 
+.client-logos-mobile{
+    display:none;
+}
+
 .comp_profile {
     max-width: 1070px;
     margin: 10px 130px;
@@ -850,6 +854,14 @@ hr {
         color: white;
         z-index: -1;
     }
+    .client-logos-mobile{
+        display:block;
+        margin-top:35px;
+    }
+    .client-logos-mobile > marquee > ul{
+        display:flex;
+    }
+
     .div-form {
         float: right;
         width: 421px;
@@ -955,10 +967,6 @@ hr {
         margin-right: -7px;
     }
 
-    #faq-div {
-        margin-top: 257px;
-    }
-
     .accordion-item:target .answer {
         max-height: 25rem;
     }
@@ -978,9 +986,7 @@ hr {
         background-color:var(--theme-color-secondary);
         color:rgb(0,0,0);
     }
-    .div-info {
-        margin-top: 30px;
-    }
+
     .stepper {
         margin-top: 115px;
     }
