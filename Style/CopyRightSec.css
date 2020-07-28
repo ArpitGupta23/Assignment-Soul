@@ -115,3 +115,22 @@
     flex: 1;
     text-align: end;
 }
+@media only screen and (max-width:768px) {
+.w-row{
+    display:grid;
+}
+.section.footer{
+    height:600px !important;
+}
+
+    .container {
+        height: 100% !important;
+    }
+
+    .footer-right-column {
+        padding-left:0;   
+    }
+    .footer-menu{
+        height:100px;
+    }
+ }
