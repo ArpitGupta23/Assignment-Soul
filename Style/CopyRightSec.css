@@ -96,25 +96,35 @@
     display:flex;
 }
 
-.socialLink{
-    flex:1;
+.socialLink-copy {
+    flex: 1;
+    text-align: initial;
 }
 
 .TopDis > div > span {
-    color:rgb(255,255,255);
+    color: rgb(255,255,255);
+    vertical-align: sub;
+    font-size: larger;
+    font-weight: bold;
 }
 
-.TopDis-Connect{
-    flex:0;
-    border-right:1px solid rgb(255,255,255);
-    border-left:1px solid rgb(255,255,255);
-    padding-left:10px;
-    padding-right:10px;
+.TopDis-Connect {
+    flex: 0;
+    border-right: 1px solid rgb(255,255,255);
+    border-left: 1px solid rgb(255,255,255);
+    padding-left: 10px;
+    padding-right: 10px;
+    height: max-content;
 }
 .TopDis-Email {
     flex: 1;
     text-align: end;
 }
+
+.socialLink-copy{
+    flex:1;
+}
+
 @media only screen and (max-width:768px) {
 .w-row{
     display:grid;
@@ -122,7 +132,9 @@
 .section.footer{
     height:600px !important;
 }
-
+.socialLink-copy{
+    text-align:center;
+}
     .container {
         height: 100% !important;
     }
