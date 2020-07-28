@@ -44,3 +44,7 @@
     .sub-courses > p {
         font-size: 1.3rem;
     }
+        .ul-course-subjects {
+        -webkit-column-count: 1;
+    }
+}
