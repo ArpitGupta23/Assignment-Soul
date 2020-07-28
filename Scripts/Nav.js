@@ -7,7 +7,7 @@
     });
 
     $("#messenger").click(function () {
-        var win = window.open('http://m.me/LensesCreative', '_blank');
+        var win = window.open('http://m.me/112536423857236', '_blank');
         if (win) {
             //Browser has allowed it to be opened
             win.focus();
