@@ -12,10 +12,10 @@
 body {
  
 }
+
 .topnav{
     display:none;
 }
-
 .fa.fa-instagram {
     color: transparent;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -227,16 +227,22 @@ nav {
 
 @media only screen and (max-width:768px) {
 
-    #main-navbar{
-        display:none;
+    #main-navbar {
+        display: none;
     }
+
     .logo {
         width: 144px;
         height: 50px;
     }
+
+
+    .nav-link{
+        border:1px solid var(--theme-color-secondary);
+    }
     .socialLink {
-        display:none;
-        width:10px;
+        display: none;
+        width: 10px;
         margin-right: 0px;
         text-align: right;
         /* padding-left: 315px; */
@@ -245,8 +251,8 @@ nav {
         margin-top: 0px;
     }
 
-    .btn-twitter{
-        background:rgb(0,0,0);
+    .btn-twitter {
+        background: rgb(0,0,0);
     }
 
     .navbar-toggler {
@@ -262,18 +268,19 @@ nav {
         height: auto;
         background-color: var(--theme-color-secondary);
     }
+
     .nav-item {
         border: 1px solid var(--theme-color-primary);
         text-align: center;
     }
 
-.btn.btn-rounded{
-    background-color:var(--theme-color-secondary);
-}
+    .btn.btn-rounded {
+        background-color: var(--theme-color-secondary);
+    }
 
 
-    #ordernow{
-        display:none;
+    #ordernow {
+        display: none;
     }
 
     body {
@@ -283,7 +290,7 @@ nav {
     .mobile-container {
         max-width: 480px;
         margin: auto;
-        background-color: var(--theme-color-primary);
+        background-color: #333;
         height: 500px;
         color: white;
         border-radius: 10px;
@@ -307,18 +314,20 @@ nav {
             text-decoration: none;
             font-size: 17px;
             display: block;
+            text-align: center;
         }
 
             .topnav a.icon {
-                background: black;
+                background: var(--theme-color-secondary);
                 display: block;
                 position: absolute;
                 right: 0;
                 top: 0;
+                margin-top: 10px;
             }
 
             .topnav a:hover {
-                background-color: #ddd;
+                background-color: var(--theme-color-secondary);
                 color: black;
             }
 
@@ -326,4 +335,5 @@ nav {
         background-color: var(--theme-color-primary);
         color: white;
     }
+
 }
