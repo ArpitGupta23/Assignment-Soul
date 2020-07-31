@@ -36,14 +36,14 @@ p{
 }
 
 .p-datetimepicker {
-    width: 437px;
+    width: inherit;
 }
 .input-datetimepicker {
     text-align: center;
 }
 
 .p-textarea {
-    min-width: 437px;
+    width:inherit;
   
 }
 
@@ -92,6 +92,8 @@ textarea {
 .xdsoft_ {
     top: 140px !important;
 }
+
+
 
 .error{
     border:2px solid red;
