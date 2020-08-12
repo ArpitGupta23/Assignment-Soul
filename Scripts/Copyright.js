@@ -32,4 +32,71 @@
             alert('Please allow popups for this website');
         }
     });
+
+
+    //$("#email-submit").click(function () {
+    //    var EmailID = $("#inputIconEx1").val();
+
+    //    if (EmailID) {
+    //        if (!validateEmail(EmailID)) {
+    //            if ($(".validation-email").length === 0) {
+    //                $("#inputIconEx1").addClass("error");
+    //                $("#inputIconEx1").parent().before("<div class='validation-email'>Please enter valid email address</div>");
+
+    //            }
+    //            $("#inputIconEx1").focus();
+    //        } else {
+    //            sendEmail(EmailID);
+    //            $(".validation-email").remove();
+    //            $("#inputIconEx1").removeClass("error");
+    //        }
+    //    } else {
+    //        $(".validation-email").remove();
+    //        $("#inputIconEx1").removeClass("error");
+    //    }
+    //});
+
+    $("#inputIconEx1").blur(function () {
+        var EmailID = $("#inputIconEx1").val();
+        if (EmailID) {
+            if (!validateEmail(EmailID)) {
+                if ($(".validation-email").length === 0) {
+                    $("#inputIconEx1").addClass("error");
+                    $("#inputIconEx1").parent().before("<div class='validation-email'>Please enter valid email address</div>");
+
+                }
+                $("#inputIconEx1").focus();
+            } else {
+                sendEmail(EmailID);
+                $(".validation-email").remove();
+                $("#inputIconEx1").removeClass("error");
+            }
+        } else {
+            $(".validation-email").remove();
+            $("#inputIconEx1").removeClass("error");
+        }
+    });
+
 });
+
+
+
+function sendEmail(EmailID) {
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "arpit.gupta.osv@gmail.com",
+            Password: "$$+2_B9-h2SWJa@K=rkW",
+            To: 'instinct225@gmail.com',
+            From: EmailID,
+            Subject: "New Request",
+            Body: "Hi Assignment Soul,"
+                + "Please find the requirements details below: Email ID: " + EmailID
+        }
+        );
+}
+
+//-------------------------------------------------Function Validate Email---------------------------------------------------
+function validateEmail($email) {
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    return emailReg.test($email);
+}
