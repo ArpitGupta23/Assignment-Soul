@@ -143,9 +143,7 @@
     flex:1;
 }
 
-.column{
-    width:100%;
-}
+
 
 @media only screen and (max-width:768px) {
 .w-row{
@@ -185,5 +183,8 @@
          border-left: none; 
          padding-left: 0; 
          padding-right: 0; 
+    }
+    .column {
+        width: 100%;
     }
  }
