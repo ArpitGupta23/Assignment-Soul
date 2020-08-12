@@ -15,6 +15,23 @@
     position: inherit;
 }
 
+.error {
+    border: 2px solid red;
+}
+
+.validation-email {
+    position: absolute;
+    color: red;
+    margin-top: -25px;
+    padding-top: -55px;
+    height: 32px;
+    width: 246px;
+    text-align: center;
+    border: 2px black solid;
+    background-color: white;
+    border-radius: 5px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -91,6 +108,7 @@
 }
 .footer-link{
     color:rgb(255,255,255);
+    height:26px;
 }
 .TopDis{
     display:flex;
@@ -123,6 +141,10 @@
 
 .socialLink-copy{
     flex:1;
+}
+
+.column{
+    width:100%;
 }
 
 @media only screen and (max-width:768px) {
