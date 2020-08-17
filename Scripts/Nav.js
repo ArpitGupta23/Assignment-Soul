@@ -29,7 +29,7 @@
 
 
     $("#insta-link").click(function () {
-        var win = window.open('https://www.instagram.com/assignmentsoul/', '_blank');
+        var win = window.open('https://www.instagram.com/assignment_soul/', '_blank');
         if (win) {
             //Browser has allowed it to be opened
             win.focus();
